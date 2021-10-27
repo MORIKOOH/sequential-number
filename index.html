@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Console-like Display</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>連番データ作成</h1>
+    <div id="js-result-div" class="result-div"></div>
+
+    <span class="displaying-value-input-span">最新の
+    <input
+        type="number"
+        id="js-displaying-value-input"
+        class="displaying-value-input"
+        min="1"
+        max="1000"
+        value="10"
+    />
+    行を表示</span>
+    
+    <div class="user-interface">
+        <button type="button" id="js-reset-button" class="reset-button">Reset</button>
+        <input type="range" id="js-range-value" class="range-input" min="0" max="1000" value="0" />
+    </div>
+    <div class="exportcsv-div">
+        <span id="js-exportcsv-filename"></span>
+        <button type="button" id="js-exportcsv-button" class="exportcsv-button">.csv ファイルをエクスポート</button>
+    </div>
+    <div class="exportjson-div">
+        <span id="js-exportjson-filename"></span>
+        <button type="button" id="js-exportjson-button" class="exportjson-button">.json ファイルをエクスポート</button>
+    </div>
+    <script src="moment.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
